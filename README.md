@@ -1,83 +1,33 @@
-<h1>  🎲 Descomplicando a criação de pacotes de processamento de imagens em Python  </h1>
-<p> Neste projeto você aprenderá a criar o seu primeiro pacote de processamento de imagens e disponibilizá-lo no repositório Pypi. Assim você pode reutilizá-lo e compartilhá-lo facilmente com outras pessoas. </p>
-<br>
+# DIO: Descomplicando a criação de pacotes de processamento de imagens em Python.
+Projeto disponibilizado na plataforma da [Digital Inovation One](https://web.dio.me/), onde foi criado um pacote para processamento de imagens com python e realizado todo o procedimento para disponibilização no repositório [pypi.org](https://pypi.org/).
 
-## Autora do Projeto: Karina Kato
+#### Autor: Rafael Vieira
+#### OBS: Trata-se de um fork do [projeto original](https://pypi.org/project/image-processing/) da professora Karine Kato. 
+## Ferramentas:
+- UTILS
+  - Read image
+  - Save image
+  - Plot Image
+  - Plot result
+  - Plot histogram
 
-### Aula: Descomplicando a criação de pacotes de processamento de imagens em Python
+- PROCESSING:
+  - Histogram Matching
+  - Structural similarity
+  - Resize image
+ 
+## Instalação:
 
-#### Tecnologia: Python
-
-#### Data: 30/03/2022
-
-## Image_Processing
-
-The package "image_processing-test" is used to:
-
--   Processing:
-
-    -   Histogram matching;
-    -   Structural similarity;
-    -   Resize image;
-
--   Utils:
-    -   Read image;
-    -   Save image;
-    -   Plot image;
-    -   Plot result;
-    -   Plot Histogram;
-
----
-
-## Installation
-
--   [x] Instalação das últimas versões de "setuptools" e "wheel"
-
-```
-py -m pip install --upgrade pip
-py -m pip install --user setuptools wheel twine
-```
-
--   [x] Tenha certeza que o diretório no terminal seja o mesmo do arquivo "setup.py"
-
-```
-py setup.py sdist bdist_wheel
-```
-
--   [x] Após completar a instalação, verifique se as pastas abaixo foram adicionadas ao projeto:
-
-    -   [x] build;
-    -   [x] dist;
-    -   [x] image_processing_test.egg-info.
-
--   [x] Basta subir os arquivos, usando o Twine, para o Test Pypi:
-
-```
-py -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-```
-
--   [x] Após rodar o comando acima no terminal, será pedido para inserir o usuário e senha. Feito isso, o projeto estará hospedado no Test Pypi.hospedá-lo no Pypi diretamente.
-        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+Use o [pip](https://pip.pypa.io/en/stable/) como gerenciador de pacotes para a instalação através do comando:
 
 ```bash
-pip install python-pacotes-processamento-imagens
+pip install image-processing-rafael
+```
+## Importação:
+Deve-se utilizar a formatação:
+
+```python
+from image-processing-rafael.processing import combination
 ```
 
-## Local Installation
-
--   [x] Instalação de dependências
-
-```
-pip install -r requirements.txt
-```
-
--   [x] Instalção do Pacote
-
-Use o gerenciador de pacotes `pip install -i https://test.pypi.org/simple/ image-processing-test `para instalar image_processing-test
-
-```bash
-pip install image-processing-test
-```
-
----
 
