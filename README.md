@@ -3,6 +3,7 @@ Projeto disponibilizado na plataforma da [Digital Inovation One](https://web.dio
 
 #### Autor: Rafael Vieira
 #### OBS: Trata-se de um fork do [projeto original](https://pypi.org/project/image-processing/) da professora Karine Kato. 
+#### OBS2: Por ser apenas um teste, o projeto foi disponibilizado APENAS na versão de teste: [test.pypi.org](https://test.pypi.org/project/image-processing-rafael/).
 ## Ferramentas:
 - UTILS
   - Read image
@@ -21,7 +22,7 @@ Projeto disponibilizado na plataforma da [Digital Inovation One](https://web.dio
 Use o [pip](https://pip.pypa.io/en/stable/) como gerenciador de pacotes para a instalação através do comando:
 
 ```bash
-pip install image-processing-rafael
+pip install -i https://test.pypi.org/simple/ image-processing-rafael
 ```
 ## Importação:
 Deve-se utilizar a formatação:
